@@ -1,0 +1,52 @@
+header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.card {
+    box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.301);
+}
+
+#sobre {
+    height: 70vh;
+}
+
+.bg-1 {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.bg-2 {
+    background-color: rgb(128, 128, 128);
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.whatsapp i:hover {
+    transition: .3s;
+    color: rgb(0, 202, 0);
+}
+
+.github i:hover {
+    transition: .3s;
+    color: rgb(0, 0, 0);
+}
+
+.linkedin i:hover {
+    transition: .3s;
+    color: rgb(0, 0, 255);
+}
+
