@@ -55,3 +55,23 @@ header {
     color: rgb(67, 67, 206);
 }
 
+
+.imagem {
+    max-width: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.575));
+}
+
+#tecnologias .card {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tecnologias .card:hover {
+    transition: .3s;
+}
+
+#tecnologias img {
+    margin-bottom: 1.5em;
+    max-width: 4em;
+}
