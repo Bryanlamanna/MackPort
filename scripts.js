@@ -3,6 +3,7 @@ const url = "https://portfolio-1184f-default-rtdb.firebaseio.com/mackenzie.json"
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     sendData();
+    
 })
 
 function sendData() {
@@ -25,8 +26,10 @@ function sendData() {
     })
     .then((response) => response.json())
     .then((data) => {
+
         alert("Mensagem enviada com sucesso!");
         console.log("Success:", data);
+        location.reload();
     })
 
 }
