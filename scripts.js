@@ -1,7 +1,32 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+const url = "https://portfolio-1184f-default-rtdb.firebaseio.com/mackenzie.json";
+
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    sendData();
+})
+
+function sendData() {
+    const name = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("mensagem").value;
+
+    const data = {
+        name: name,
+        email: email,
+        message: message
+    }
+
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("Mensagem enviada com sucesso!");
+        console.log("Success:", data);
+    })
+
+}
