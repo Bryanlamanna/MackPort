@@ -6,6 +6,9 @@ document.querySelector("form").addEventListener("submit", function(event) {
     
 })
 
+$(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  });
 function sendData() {
     const name = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
