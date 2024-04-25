@@ -33,18 +33,19 @@ header {
     height: 70vh;
 }
 
+.btn-1 {
+    background-color: rgb(173, 173, 173);
+}
+
 .bg-1 {
     background-color: rgb(42, 42, 42);
     color: white;
 }
 
-.btn-1 {
-    background-color: rgb(173, 173, 173);
-}
 
 .bg-2 {
     color: white;
-    background-color: #2587ff;
+    background-color: #505050;
 }
 
 .bg-3 {
@@ -79,8 +80,7 @@ header {
 
 
 .imagem {
-    max-width: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    width: 60%;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.575));
 }
 
