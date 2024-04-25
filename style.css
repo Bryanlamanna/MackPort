@@ -78,6 +78,9 @@ header {
     color: rgb(42, 92, 255);
 }
 
+#sobre {
+    height: auto;
+}
 
 .imagem {
     width: 60%;
