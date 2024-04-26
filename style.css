@@ -26,7 +26,9 @@ header {
 }
 
 #portfolio .card {
+    overflow: hidden;
     box-shadow:  10px 10px 20px rgba(0, 0, 0, 0.301);
+    border: none;
 }
 
 #sobre {
@@ -37,13 +39,13 @@ header {
     background-color: rgb(173, 173, 173);
 }
 
-.bg-1 {
+.bg-2 {
     background-color: rgb(42, 42, 42);
     color: white;
 }
 
 
-.bg-2 {
+.bg-1 {
     color: white;
     background-color: #505050;
 }

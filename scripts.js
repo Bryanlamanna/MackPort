@@ -1,4 +1,10 @@
 const urlMack = "https://portfolio-1184f-default-rtdb.firebaseio.com/mackenzie";
+const actions = ["Desenvolvo ", "Crio "];
+const things = ["Ideias ", "Soluções "];
+const stacks = ["Java ", "Spring ", "MySQL ", "JavaScript ", "Bootstrap ", "HTML ", "CSS ", "Firebase", "IA "];
+const leftText = document.querySelector(".left-text");
+const rightText = document.querySelector(".right-text");
+const techText = document.querySelector(".tech-text");
 
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -8,6 +14,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
 $(document).ready(function(){
     $('[data-bs-toggle="tooltip"]').tooltip();
   });
+
 function sendData() {
 
     const name = document.getElementById("nome").value;
