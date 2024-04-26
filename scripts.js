@@ -1,10 +1,13 @@
 const urlMack = "https://portfolio-1184f-default-rtdb.firebaseio.com/mackenzie";
 const actions = ["Desenvolvo ", "Crio "];
-const things = ["Ideias ", "Soluções "];
-const stacks = ["Java ", "Spring ", "MySQL ", "JavaScript ", "Bootstrap ", "HTML ", "CSS ", "Firebase", "IA "];
-const leftText = document.querySelector(".left-text");
-const rightText = document.querySelector(".right-text");
+const things = ["ideias ", "soluções "];
+const stacks = ["Spring", "MySQL", "JavaScript", "Bootstrap", "HTML", "CSS", "Firebase", "IA", "Java"];
+const leftText = document.querySelector(".text-left");
+const rightText = document.querySelector(".text-right");
 const techText = document.querySelector(".tech-text");
+let index1 = 0;
+let index2 = 0;
+let index3 = 0; 
 
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -46,4 +49,39 @@ function sendData() {
 
 }
 
+function changeStack() {
+    
+    techText.style.opacity = 0;
+    setTimeout(() => {
+        techText.innerHTML = stacks[index1];
+        techText.style.opacity = 1;
+        index1 = (index1 + 1) % stacks.length;
+    }, 500)
+   
 
+}
+
+function changeLeftText() {
+    
+    leftText.style.opacity = 0;
+    setTimeout(() => {
+        leftText.innerHTML = actions[index2];
+        leftText.style.opacity = 1;
+        index2 = (index2 + 1) % actions.length;
+    }, 500)
+
+}
+
+function changeRightText() {
+
+    rightText.style.opacity = 0;
+    setTimeout(() => {
+        rightText.innerHTML = things[index3];
+        rightText.style.opacity = 1;
+        index3 = (index3 + 1) % things.length;
+    }, 500)
+}
+
+setInterval(changeStack, 3000);
+setInterval(changeLeftText, 6000);
+setInterval(changeRightText, 9000);

@@ -14,7 +14,30 @@ header {
     color: rgb(245, 245, 245);
 }
 
+header h1 {
+    font-size: 3.2em;
+    font-weight: 450;
+}
 
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.mutantText {
+    font-size: x-large;
+}
+
+.text-left, .text-right, .tech-text {
+    transition: .5s;
+}
 
 
 .redes i {
@@ -85,6 +108,7 @@ header {
 }
 
 .imagem {
+    animation: float 6s linear infinite;
     width: 60%;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.575));
 }
